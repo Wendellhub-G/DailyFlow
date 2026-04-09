@@ -14,8 +14,8 @@ https://docs.google.com/document/d/1oY7eoWRsa-WV7VpNvzUEvwIRX4zUyUREqpoIYzAKJ-A/
 
 ## 👨‍💻 Autores
 
-Ana Clara Alves
-Wendell Gabryel
-Karla Cristine
-Luiz Felipe
-Matheus Leal
+Ana Clara Alves,
+Wendell Gabryel,
+Karla Cristine,
+Luiz Felipe,
+Matheus Leal.
