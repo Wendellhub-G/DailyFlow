@@ -3,7 +3,7 @@
 O **DailyFlow** é uma proposta de aplicação voltada para gerenciamento de tarefas, priorização e foco no que realmente importa ao longo do dia.
 
 ## 📄 Documento de Requisitos
-[DailyFlow - Docs.pdf](https://github.com/user-attachments/files/26583555/DailyFlow.-.Docs.pdf)
+https://docs.google.com/document/d/1oY7eoWRsa-WV7VpNvzUEvwIRX4zUyUREqpoIYzAKJ-A/edit?usp=sharing
 
 ## ⚙️ Funcionalidades
 
