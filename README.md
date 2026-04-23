@@ -2,7 +2,7 @@
 O DailyFlow é uma aplicação voltada para o gerenciamento de tarefas com foco na redução da carga cognitiva. Através de uma interface limpa e uma hierarquia de prioridades rígida, o sistema auxilia o usuário a focar apenas no que é essencial, eliminando distrações e organizando o encerramento do ciclo diário.
 
 📄 Documentação Completa
-[https://docs.google.com/document/d/1oY7eoWRsa-WV7VpNvzUEvwIRX4zUyUREqpoIYzAKJ-A/edit?tab=t.dzbtdrbznv4t](googledocs).
+[Google Docs](https://docs.google.com/document/d/1oY7eoWRsa-WV7VpNvzUEvwIRX4zUyUREqpoIYzAKJ-A/edit?tab=t.dzbtdrbznv4t).
 
 🚀 Novas Implementações
 Nesta última atualização, implementamos o fluxo completo de entrada e personalização do usuário:
