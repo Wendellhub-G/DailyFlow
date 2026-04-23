@@ -1,47 +1,68 @@
-# 📑 DailyFlow
+🌊 DailyFlow - Minimalismo Cognitivo e Foco Diário
+O DailyFlow é uma aplicação voltada para o gerenciamento de tarefas com foco na redução da carga cognitiva. Através de uma interface limpa e uma hierarquia de prioridades rígida, o sistema auxilia o usuário a focar apenas no que é essencial, eliminando distrações e organizando o encerramento do ciclo diário.
 
-O **DailyFlow** é uma proposta de aplicação voltada para gerenciamento de tarefas, priorização e foco no que realmente importa ao longo do dia.
+📄 Documentação Completa
+[https://docs.google.com/document/d/1oY7eoWRsa-WV7VpNvzUEvwIRX4zUyUREqpoIYzAKJ-A/edit?tab=t.dzbtdrbznv4t](googledocs).
 
-## 📄 Documento de Requisitos
-https://docs.google.com/document/d/1oY7eoWRsa-WV7VpNvzUEvwIRX4zUyUREqpoIYzAKJ-A/edit?usp=sharing
+🚀 Novas Implementações
+Nesta última atualização, implementamos o fluxo completo de entrada e personalização do usuário:
 
-## ⚙️ Funcionalidades
+Fluxo de Registro Multistep: Cadastro organizado em etapas (Informações Básicas, Contato e Objetivos).
 
-* Organização por prioridade
-* Foco em tarefas principais
-* Rotina de fechamento diário
-* Interface limpa e objetiva
+Sistema de Login Flexível: Acesso via e-mail ou telefone.
 
-## 🚀 Novas Implementações
+Onboarding de Boas-vindas: Tela de saudação personalizada para criação da primeira tarefa.
 
+Perfil do Usuário: Nova tela com dados cadastrais (Data de Nascimento, Sexo, Endereço opcional) e métricas de foco.
 
-### 🗄️ Modelo de Dados (DDL)
-O banco de dados foi estruturado para garantir integridade e performance. Abaixo, a definição das tabelas principais:
+Estado Zero Realista: O dashboard agora inicia totalmente limpo, exibindo apenas tarefas reais criadas pelo usuário.
 
-```sql
--- Estrutura para Usuários e Tarefas
+⚙️ Funcionalidades Principais
+Organização por Prioridade: Classificação em Foco Principal, Secundário e Terciário.
+
+Lógica de Ocultação: Tarefas de menor prioridade ficam ocultas para evitar sobrecarga visual.
+
+Rotina de Fechamento: Modal interativo ao fim do dia para decidir o destino das tarefas pendentes.
+
+Calendário Nativo: Seletor de data de nascimento otimizado para facilitar o registro.
+
+🗄️ Modelo de Dados Atualizado (DDL)
+O banco de dados foi expandido para suportar os novos campos de perfil e o fluxo de autenticação:
+
+SQL´´´
+-- Tabela de Usuários (Registro Completo)
 CREATE TABLE usuarios (
     id_usuario SERIAL PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
+    data_nascimento DATE NOT NULL,
+    sexo VARCHAR(20), -- Masculino, Feminino
     email VARCHAR(100) UNIQUE NOT NULL,
-    senha_hash VARCHAR(255) NOT NULL
+    telefone VARCHAR(20) NOT NULL,
+    senha_hash VARCHAR(255) NOT NULL,
+    endereco VARCHAR(255), -- Campo Opcional
+    objetivo_foco TEXT,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Tabela de Tarefas
 CREATE TABLE tarefas (
     id_tarefa SERIAL PRIMARY KEY,
     id_usuario INTEGER NOT NULL,
     titulo VARCHAR(150) NOT NULL,
-    prioridade INTEGER CHECK (prioridade IN (1, 2, 3)), -- 1: Alta, 2: Média, 3: Baixa
-    status VARCHAR(20) DEFAULT 'pendente',
+    descricao TEXT,
+    prioridade INTEGER CHECK (prioridade IN (1, 2, 3)), -- 1: Principal, 2: Secundária, 3: Terciária
+    status VARCHAR(20) DEFAULT 'pendente', -- pendente, concluida, descartada, adiada
     data_agendada DATE NOT NULL,
-    CONSTRAINT fk_usuario FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
-);
-```
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_usuario FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario) ON DELETE CASCADE
+);```
+👥 Autores
+Ana Clara Alves
 
-## 👨‍💻 Autores
+Wendell Gabryel
 
-Ana Clara Alves,
-Wendell Gabryel,
-Karla Cristine,
-Luiz Felipe,
-Matheus Leal.
+Karla Cristine
+
+Luiz Felipe
+
+Matheus Leal
