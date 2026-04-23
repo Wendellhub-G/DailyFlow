@@ -1,11 +1,3 @@
-O seu README está ficando excelente e muito profissional! Para deixar ele perfeito no GitHub, ajustei o espaçamento, a hierarquia dos títulos e corrigi a formatação do bloco de código SQL (usando os três acentos graves ` ``` ` que o GitHub reconhece).
-
-Também adicionei o link do **Figma** e organizei a lista de autores para ficar mais clean.
-
-Aqui está o conteúdo pronto para você copiar e colar:
-
----
-
 # 🌊 DailyFlow - Minimalismo Cognitivo e Foco Diário
 
 O **DailyFlow** é uma aplicação voltada para o gerenciamento de tarefas com foco na redução da carga cognitiva. Através de uma interface limpa e uma hierarquia de prioridades rígida, o sistema auxilia o usuário a focar apenas no que é essencial, eliminando distrações e organizando o encerramento do ciclo diário.
