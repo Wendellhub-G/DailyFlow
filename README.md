@@ -18,7 +18,7 @@ https://docs.google.com/document/d/1oY7eoWRsa-WV7VpNvzUEvwIRX4zUyUREqpoIYzAKJ-A/
 ### 🗄️ Modelo de Dados (DDL)
 O banco de dados foi estruturado para garantir integridade e performance. Abaixo, a definição das tabelas principais:
 
-sql
+```sql
 -- Estrutura para Usuários e Tarefas
 CREATE TABLE usuarios (
     id_usuario SERIAL PRIMARY KEY,
@@ -36,7 +36,7 @@ CREATE TABLE tarefas (
     data_agendada DATE NOT NULL,
     CONSTRAINT fk_usuario FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
 );
-
+```
 
 ## 👨‍💻 Autores
 
