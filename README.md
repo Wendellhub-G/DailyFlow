@@ -1,4 +1,4 @@
-# 🌊 DailyFlow - Minimalismo Cognitivo e Foco Diário
+# 🌊 DailyFlow
 
 O **DailyFlow** é uma aplicação voltada para o gerenciamento de tarefas com foco na redução da carga cognitiva. Através de uma interface limpa e uma hierarquia de prioridades rígida, o sistema auxilia o usuário a focar apenas no que é essencial, eliminando distrações e organizando o encerramento do ciclo diário.
 
