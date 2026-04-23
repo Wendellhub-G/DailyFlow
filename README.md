@@ -1,36 +1,45 @@
-🌊 DailyFlow - Minimalismo Cognitivo e Foco Diário
-O DailyFlow é uma aplicação voltada para o gerenciamento de tarefas com foco na redução da carga cognitiva. Através de uma interface limpa e uma hierarquia de prioridades rígida, o sistema auxilia o usuário a focar apenas no que é essencial, eliminando distrações e organizando o encerramento do ciclo diário.
+O seu README está ficando excelente e muito profissional! Para deixar ele perfeito no GitHub, ajustei o espaçamento, a hierarquia dos títulos e corrigi a formatação do bloco de código SQL (usando os três acentos graves ` ``` ` que o GitHub reconhece).
 
-📄 Documentação Completa
+Também adicionei o link do **Figma** e organizei a lista de autores para ficar mais clean.
 
-[Google Docs](https://docs.google.com/document/d/1oY7eoWRsa-WV7VpNvzUEvwIRX4zUyUREqpoIYzAKJ-A/edit?tab=t.dzbtdrbznv4t).
+Aqui está o conteúdo pronto para você copiar e colar:
 
-🚀 Novas Implementações
-Nesta última atualização, implementamos o fluxo completo de entrada e personalização do usuário:
+---
 
-Fluxo de Registro Multistep: Cadastro organizado em etapas (Informações Básicas, Contato e Objetivos).
+# 🌊 DailyFlow - Minimalismo Cognitivo e Foco Diário
 
-Sistema de Login Flexível: Acesso via e-mail ou telefone.
+O **DailyFlow** é uma aplicação voltada para o gerenciamento de tarefas com foco na redução da carga cognitiva. Através de uma interface limpa e uma hierarquia de prioridades rígida, o sistema auxilia o usuário a focar apenas no que é essencial, eliminando distrações e organizando o encerramento do ciclo diário.
 
-Onboarding de Boas-vindas: Tela de saudação personalizada para criação da primeira tarefa.
+---
 
-Perfil do Usuário: Nova tela com dados cadastrais (Data de Nascimento, Sexo, Endereço opcional) e métricas de foco.
+## 🔗 Links do Projeto
+* **Documentação Completa:** [Docs](https://docs.google.com/document/d/1oY7eoWRsa-WV7VpNvzUEvwIRX4zUyUREqpoIYzAKJ-A/edit?usp=sharing)
+* **Protótipo Interativo:** [Figma](https://juice-mocha-31849607.figma.site)
 
-Estado Zero Realista: O dashboard agora inicia totalmente limpo, exibindo apenas tarefas reais criadas pelo usuário.
+---
 
-⚙️ Funcionalidades Principais
-Organização por Prioridade: Classificação em Foco Principal, Secundário e Terciário.
+## 🚀 Novas Implementações
 
-Lógica de Ocultação: Tarefas de menor prioridade ficam ocultas para evitar sobrecarga visual.
+* **Fluxo de Registro Multistep:** Cadastro organizado em etapas (Informações Básicas, Contato e Objetivos).
+* **Sistema de Login Flexível:** Acesso via e-mail ou telefone.
+* **Onboarding de Boas-vindas:** Tela de saudação personalizada para criação da primeira tarefa.
+* **Perfil do Usuário:** Nova tela com dados cadastrais (Data de Nascimento, Sexo, Endereço opcional) e métricas de foco.
+* **Estado Zero Realista:** O dashboard agora inicia totalmente limpo, exibindo apenas tarefas reais criadas pelo usuário.
 
-Rotina de Fechamento: Modal interativo ao fim do dia para decidir o destino das tarefas pendentes.
+---
 
-Calendário Nativo: Seletor de data de nascimento otimizado para facilitar o registro.
+## ⚙️ Funcionalidades Principais
+* **Organização por Prioridade:** Classificação em Foco Principal, Secundário e Terciário.
+* **Lógica de Ocultação:** Tarefas de menor prioridade ficam ocultas para evitar sobrecarga visual.
+* **Rotina de Fechamento:** Modal interativo ao fim do dia para decidir o destino das tarefas pendentes.
+* **Calendário Nativo:** Seletor de data de nascimento otimizado para facilitar o registro.
 
-🗄️ Modelo de Dados Atualizado (DDL)
+---
+
+## 🗄️ Modelo de Dados Atualizado (DDL)
 O banco de dados foi expandido para suportar os novos campos de perfil e o fluxo de autenticação:
 
-SQL´´´
+```sql
 -- Tabela de Usuários (Registro Completo)
 CREATE TABLE usuarios (
     id_usuario SERIAL PRIMARY KEY,
@@ -56,14 +65,15 @@ CREATE TABLE tarefas (
     data_agendada DATE NOT NULL,
     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_usuario FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario) ON DELETE CASCADE
-);```
-👥 Autores
-Ana Clara Alves
+);
+```
 
-Wendell Gabryel
+---
 
-Karla Cristine
+## 👥 Autores
+* Ana Clara Alves
+* Wendell Gabryel
+* Karla Cristine
+* Luiz Felipe
+* Matheus Leal
 
-Luiz Felipe
-
-Matheus Leal
