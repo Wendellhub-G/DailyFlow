@@ -29,7 +29,6 @@ O **DailyFlow** é uma aplicação voltada para o gerenciamento de tarefas com f
 ---
 
 ## 🗄️ Modelo de Dados Atualizado (DDL)
-O banco de dados foi expandido para suportar os novos campos de perfil e o fluxo de autenticação:
 
 ```sql
 -- Tabela de Usuários (Registro Completo)
