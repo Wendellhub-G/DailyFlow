@@ -6,7 +6,7 @@ O **DailyFlow** é uma aplicação voltada para o gerenciamento de tarefas com f
 
 ## 🔗 Links do Projeto
 * **Documentação Completa:** [Docs](https://docs.google.com/document/d/1oY7eoWRsa-WV7VpNvzUEvwIRX4zUyUREqpoIYzAKJ-A/edit?usp=sharing)
-* **Protótipo Interativo:** [Figma](https://juice-mocha-31849607.figma.site)
+* **Protótipo Interativo:** [Figma](https://www.figma.com/make/CtTk5ShQVF6ADDUKI9SG7I/DailyFlow---primeiro-prot%C3%B3tipo?fullscreen=1&t=fJmaFzj89iuXlIXJ-1&preview-route=%2Fregister)
 
 ---
 
